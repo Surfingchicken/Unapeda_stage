@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=PT+Sans:wght@400;700&display=swap');
+/* reset*/
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem sans-serif; 
+    font-family: 'Arial', sans-serif;
+    font-size: large;
+    letter-spacing: 1px;
+    margin: 0;
+    line-height: 1.6;
+}
+h1,h2,h3,h4,ul,ol,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    display: inline-block;
+    object-fit: cover;
+    vertical-align: middle;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button{
+    border-style: none;
+}
+a {
+    text-decoration: none;
+    text-transform: none;
+    color: #fff;
+
+}
+
+/* theme */
+body{
+    background-color: #955E42;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+header{
+    background-color: #fff;
+    padding-top: 15px;
+    padding-left: 5px;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    padding-bottom: 3rem;
+    
+}
+header img{
+    height: 150px;
+    width: 150px;
+    margin:auto;
+}
+header ul {
+    padding-left: 5rem;
+    
+}
+header ul li {
+    padding: 0;
+    margin: 0;
+
+}
+header ul li h1{
+    font-size:64px;
+    height: 110px;
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+header ul  li h2 {
+    font-size: 25px;
+    font-weight: 200;
+    
+}
+nav{
+    font-weight:800;
+    color: #fff;
+
+    
+}
+.ndnav{
+    font-weight:600;
+    margin-top: 0;
+    width: 47%;
+    text-align: right;  
+}
+nav .contacts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:#A44200;
+}
+nav .contacts img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+nav .options{
+    background-color:#3C1518 ;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+nav li {
+    margin-left:auto;
+    margin-right: auto;
+}
+
+nav *   li a {
+    display: table-cell;
+    vertical-align: middle;
+    height:5rem;
+}
+.ndnav ul li a{
+    height: 3rem;
+} 
+main .content{
+    padding: 5rem 5rem ;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 100px;
+
+}
+main .more{
+    margin: 5rem 5rem ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+}
+section{
+
+    display: inline-block;
+    width: fill;
+    height: same;
+    color: #fff;
+    position: relative;
+    border-radius: 20px;
+    
+}
+section:nth-of-type(1){
+    background-color: #D58936;
+}
+section:nth-of-type(2){
+    background-color:#c97829;
+}
+section:nth-of-type(3){
+    background-color:#69140E ;
+
+}
+
+section:nth-of-type(4){
+    background-color:#531513 ;
+}
+section:nth-of-type(5){
+    background-color:#BD661B;
+}
+
+section:nth-of-type(6){
+    background-color:#371316 ;
+}
+section h3{
+    font-weight:600;
+    text-align: center;
+    position: relative;
+    padding: 3rem;
+    
+}
+section h3::before, section h3::after{
+    position: absolute;
+    width: 90%;
+    height: 10px;
+    content: "";
+}
+section h3::before{
+    left: 5%;
+    bottom: 0;
+    border-bottom: 0.1rem  solid ;
+}
+
+section ul{
+    font-weight:600;
+    padding: 0;
+    background-color: inherit;
+    margin: 10px 0;
+   
+}
+
+section ul li{
+    padding: 1rem;
+    padding-left: 3rem;
+
+    background-color: inherit;
+    
+}
+section ul li:last-of-type{
+    margin-bottom: 3rem;
+}
+.material-symbols-outlined{
+    font-size: 30px;
+    padding: 0 10px;
+}
+h1,h2,h3{
+    font-family: 'Arial', sans-serif;
+    font-weight:800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+section ul li:hover{
+   filter: saturate(4);
+   
+}
+
