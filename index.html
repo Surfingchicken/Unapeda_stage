@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="./css/main.css">
+    
     <title>UNAPEDA</title>
 </head>
 <body>
+    <script src="./app.js"></script>
     <header>
             <img src="./asset/img/Logo_unapeda.png" alt="Logo_unapeda">
             <ul id="title_wrap">
@@ -22,7 +25,12 @@
                         Surdités / Familles / Communication / Services 
                      </h2>
                 </li>
-            </ul>  
+            </ul>
+            <video controls>
+                <source src="./asset/video/Tadikoi.mp4" type="video/mp4">
+
+                video à insérer
+            </video>  
         
     </header>
     <nav>
@@ -41,14 +49,62 @@
             <li><a href="">mail</a></li>
             <li><a href="">vos questions</a></li>
         </ul>
+        <input type="text" placeholder="Rechercher..">
     </nav>
+
+
     <main>
+        <div>
+            <section class="news">
+                <h3>
+                    Nos dernières News / Activités :
+                </h3>
+                <figure>
+                    <img src="./asset/img/img_news.png" alt="img_news">
+                    <figcaption>
+                            <h4>Exposition TOP SECRET, espionnage et cinéma - à la Cinémathèque de Paris</h4>
+                        <p> 
+                            Une exposition ludique et érudite. De Mata Hari à Malotru, de James Bond à Edward Snowden.
+                            <div id="infos">
+                                <div>
+                                    <h4>Visites en LSF:</h4>
+                                    <ul>
+                                        <li>- samedi 10 décembre à 12h</li>
+                                        <li>- samedi 14 janvier à 12h</li>
+                                        <li>- samedi 11 février à 12h</li>
+                                        <li>- samedi 10 décembre à 12h</li>
+                                    </ul>
+                                    <aside>
+                                        Visites animées par Carine Morel
+                                    </aside>
+                                </div>
+                                <div>
+                                    <h4>Pour réserver :<a href="https://billetterie.cinematheque.fr/visite-lsf-exposition..."> Cliquez ici !</a></h4>
+                                    <ul>
+                                        <li> Durée : 1h15</li>
+                                        <li>Tarif malentendant : 7€</li>
+                                        <li>Tarif entendant : 12€</li>
+                                        <li>Cinémathèque française</li>
+                                        <li>51 rue de Bercy 75012 Paris</li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </p>
+                    </figcaption>
+                </figure>
+            </section>
+        </div>
         <div class="content">
-            <section>
+            <section id="res">
                 <h3>
                     Notre Réseau
+                    <button id="btn_1">
+                        <span class="material-symbols-outlined">
+                            expand_more
+                            </span>                            
+                    </button>
                 </h3>
-                <ul>
+                <ul id="ul_1">
                     <li>Adhésion</li>
                     <li>Inscription news</li>
                     <li>Nos dernières actualités</li>
@@ -56,11 +112,16 @@
                 </ul>
             </section>
 
-            <section>
+            <section id="ass">
                 <h3>
                     L’association
+                    <button id="btn_2">
+                        <span class="material-symbols-outlined">
+                            expand_more
+                            </span>                            
+                    </button>
                 </h3>
-                <ul>
+                <ul id="ul_2">
                     <li>Notre histoire</li>
                     <li>Nos membres</li>
                     <li>Nos valeurs</li>
@@ -69,11 +130,16 @@
                 </ul>
             </section>
             
-            <section>
+            <section id="besoins">
                 <h3>
                     Vos besoins
+                    <button id="btn_3">
+                        <span class="material-symbols-outlined">
+                            expand_more
+                            </span>                            
+                    </button>
                 </h3>
-                <ul>
+                <ul id="ul_3">
                     <li>L'éducation</li>
                     <li>La santé</li>
                     <li>L'emploi</li>
@@ -81,11 +147,16 @@
                     <li>Le sport</li>
                 </ul>
             </section>
-            <section>
+            <section id="inf">
                 <h3>
                     Les infos utiles
+                    <button id="btn_4">
+                        <span class="material-symbols-outlined">
+                            expand_more
+                            </span>                            
+                    </button>
                 </h3>
-                <ul>
+                <ul id="ul_4">
                     <li>L'actualité</li>
                     <li>Les études</li>
                     <li>Connaitre vos droits</li>
@@ -96,7 +167,7 @@
             </section>
         </div>
         <div class="more">
-            <section>
+            <section id="asso">
                 <h3>
                     Soutenez nous
                 </h3>
@@ -118,12 +189,9 @@
                     <li>Témoignages</li>
                 </ul>
             </section>
-        <siv>
-       
-
-
+        </div>
     </main>
 
-    <footer></footer>
+    <footer>Maquette Web mise en Forme par Delfino - ITIC - 2022 - &copy;</footer>
 </body>
 </html>
