@@ -185,17 +185,17 @@ section h3{
     padding: 1.5rem;
     
 }
-.content section ul li:first-of-type{
+.content section ul li:first-of-type,.more section ul li:first-of-type{
     position: relative;
     margin-top: -20px;
 }
-.content section ul li:first-of-type::before, section li:first-of-type::after{
+.content section ul li:first-of-type::before,.content section li:first-of-type::after,.more section ul li:first-of-type::before,.more section li:first-of-type::after{
     position: absolute;
     width: 90%;
     height: 10px;
     content: "";
 }
-.content section ul li:first-of-type::before{
+.content section ul li:first-of-type::before,.more section ul li:first-of-type::before {
     left: 5%;
     top: 0;
     border-top: 0.1rem  solid ;
