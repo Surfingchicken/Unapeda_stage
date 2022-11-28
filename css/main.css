@@ -151,19 +151,19 @@ input[type=text] {
     font-size: 17px;
 } 
 main .notnews{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
 }
 main .content{
     padding: 0 5rem ;
     display: inline-block;
-
+    width: 50%;
 }
 main .more{
     margin: 0 5rem 5rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 100px;
+    height: min-content;
 }
 section{
     display: inline-block;
@@ -221,12 +221,14 @@ section h3{
     background-color: inherit;
     margin: 10px 0;
     border-radius: 20px;
+    height: min-content;
 }
 
 .content section ul li, .more section ul li{
     padding: 1.5rem;
     font-size: larger;
     background-color: inherit;
+    border-radius: 20px;
 }
 .content section ul li:last-of-type{
     margin-bottom: 3rem;
