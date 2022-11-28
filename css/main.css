@@ -59,12 +59,12 @@ header{
     
 }
 header img{
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     margin:auto;
 }
 header ul {
-    padding-left: 5rem;
+    padding-left: 10rem;
     margin-top: auto;
     margin-bottom: auto;
     
@@ -108,13 +108,13 @@ nav{
     margin-top: 0;
     position: relative;
     text-align: right;
-    background-color: #3C1518;
+    background-color: #3c152a;
 }
 nav .contacts{
     width: 47%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color:#A44200;
+    background-color:#0ca168;
     height: 3rem;
 }
 nav .contacts img{
@@ -126,7 +126,7 @@ nav .contacts img{
     border: none;
 }
 nav .options{
-    background-color:#3C1518 ;
+    background-color:#3c152a ;
     display: grid;
     grid-template-columns: repeat(6,1fr);
 }
@@ -177,20 +177,20 @@ section{
 #res{
     background-color: #b65c28;
 }
-section:nth-of-type(2){
-    background-color:#69140E ;
+#ass, #news2{
+    background-color:#2f690e ;
 }
-section:nth-of-type(3){
-    background-color:#ba6e23 ;
+#besoins{
+    background-color:#2397ba ;
 }
-section:nth-of-type(4){
-    background-color:#531513 ;
+#inf{
+    background-color:#441353 ;
 }
-#asso{
+#asso, #news3{
     background-color:#BD661B;
 }
-section:nth-of-type(6){
-    background-color:#371316 ;
+#con{
+    background-color:#52161b ;
 }
 section h3{
     font-weight:600;
@@ -225,7 +225,7 @@ section h3{
 }
 
 .content section ul li, .more section ul li{
-    padding: 1.5rem;
+    padding: 1.1rem;
     font-size: larger;
     background-color: inherit;
     border-radius: 20px;
@@ -260,9 +260,9 @@ section ul li:hover{
     display: none;
 }
 .newscont{
-    margin-top: 5rem;
+    margin: 5rem;
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: 80px 1fr 80px;
     background-color: rgb(19, 45, 83);
 }
 .news {
