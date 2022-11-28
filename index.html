@@ -22,7 +22,21 @@
                 </li>
                 <li>
                     <h2>
-                        Surdités / Familles / Communication / Services 
+                        <ul>
+                            <li>
+                                Surdités
+                            </li>
+                            <li>
+                                Familles
+                            </li>
+                            <li>
+                                Communications
+                            </li>
+                            <li>
+                                Services 
+                            </li>
+                        </ul>
+                           
                      </h2>
                 </li>
             </ul>
@@ -46,16 +60,23 @@
     <nav class="ndnav">
         <ul class="contacts">
             <li><a href=""><img src="./asset/img/fb_icon.png" alt="fb"></a></li>
-            <li><a href="">mail</a></li>
-            <li><a href="">vos questions</a></li>
+            <li><a href=""><span class="material-symbols-outlined">
+                mail
+                </span></a></li>
+            <li><a href=""><span class="material-symbols-outlined">
+                help
+                </span></a></li>
         </ul>
         <input type="text" placeholder="Rechercher..">
     </nav>
 
 
     <main>
-        <div>
-            <section class="news">
+        <div class="newscont">
+            <button class="left"><span class="material-symbols-outlined">
+                expand_more
+                </span></button>
+            <section class="news active">
                 <h3>
                     Nos dernières News / Activités :
                 </h3>
@@ -91,105 +112,133 @@
                             </div> 
                         </p>
                     </figcaption>
-                </figure>
+                </figure> 
             </section>
+            <section class="news">
+                <h3>
+                    TBD
+                </h3>
+                <figure>
+                    <img src="./asset/img/img_news.png" alt="img_news">
+                    <figcaption>
+                            <h4>TBD</h4>
+                    </figcaption>
+                </figure> 
+            </section>
+            <section class="news">
+                <h3>
+                    TBD
+                </h3>
+                <figure>
+                    <img src="./asset/img/img_news.png" alt="img_news">
+                    <figcaption>
+                            <h4>TBD</h4>
+                    </figcaption>
+                </figure> 
+            </section>
+            <button class="right"><span class="material-symbols-outlined">
+                expand_more
+                </span></button>
         </div>
-        <div class="content">
-            <section id="res">
-                <h3>
-                    Notre Réseau
-                    <button id="btn_1">
-                        <span class="material-symbols-outlined">
-                            expand_more
-                            </span>                            
-                    </button>
-                </h3>
-                <ul id="ul_1">
-                    <li>Adhésion</li>
-                    <li>Inscription news</li>
-                    <li>Nos dernières actualités</li>
-                    <li>Les réseaux sociaux</li>
-                </ul>
-            </section>
-
-            <section id="ass">
-                <h3>
-                    L’association
-                    <button id="btn_2">
-                        <span class="material-symbols-outlined">
-                            expand_more
-                            </span>                            
-                    </button>
-                </h3>
-                <ul id="ul_2">
-                    <li>Notre histoire</li>
-                    <li>Nos membres</li>
-                    <li>Nos valeurs</li>
-                    <li>L’administration</li>
-                    <li>Nos partenaires</li>
-                </ul>
-            </section>
-            
-            <section id="besoins">
-                <h3>
-                    Vos besoins
-                    <button id="btn_3">
-                        <span class="material-symbols-outlined">
-                            expand_more
-                            </span>                            
-                    </button>
-                </h3>
-                <ul id="ul_3">
-                    <li>L'éducation</li>
-                    <li>La santé</li>
-                    <li>L'emploi</li>
-                    <li>Les mobilités</li>
-                    <li>Le sport</li>
-                </ul>
-            </section>
-            <section id="inf">
-                <h3>
-                    Les infos utiles
-                    <button id="btn_4">
-                        <span class="material-symbols-outlined">
-                            expand_more
-                            </span>                            
-                    </button>
-                </h3>
-                <ul id="ul_4">
-                    <li>L'actualité</li>
-                    <li>Les études</li>
-                    <li>Connaitre vos droits</li>
-                    <li>Les aides techniques</li>
-                    <li>Les aides humaines</li>
-                    <li>Les adresses utiles</li>
-                </ul>
-            </section>
-        </div>
-        <div class="more">
-            <section id="asso">
-                <h3>
-                    Soutenez nous
-                </h3>
-                <ul>
-                    <li>Faire un don</li>
-                    <li>Devenez membre</li>
-                    <li>Bénévolat</li>
-                    <li>Animer un groupe de parole</li>
-                </ul>
-            </section>
+        <div class="notnews">
+            <div class="content">
+                <section id="res">
+                    <h3>
+                        Notre Réseau
+                        <button id="btn_1">
+                            <span class="material-symbols-outlined">
+                                expand_more
+                                </span>                            
+                        </button>
+                    </h3>
+                    <ul id="ul_1">
+                        <li>Adhésion</li>
+                        <li>Inscription news</li>
+                        <li>Nos dernières actualités</li>
+                        <li>Les réseaux sociaux</li>
+                    </ul>
+                </section>
     
-            <section>
-                <h3>
-                    Contacts
-                </h3>
-                <ul>
-                    <li>Vos questions</li>
-                    <li>Abonnez vous à la news</li>
-                    <li>Témoignages</li>
-                </ul>
-            </section>
+                <section id="ass">
+                    <h3>
+                        L’association
+                        <button id="btn_2">
+                            <span class="material-symbols-outlined">
+                                expand_more
+                                </span>                            
+                        </button>
+                    </h3>
+                    <ul id="ul_2">
+                        <li>Notre histoire</li>
+                        <li>Nos membres</li>
+                        <li>Nos valeurs</li>
+                        <li>L’administration</li>
+                        <li>Nos partenaires</li>
+                    </ul>
+                </section>
+                
+                <section id="besoins">
+                    <h3>
+                        Vos besoins
+                        <button id="btn_3">
+                            <span class="material-symbols-outlined">
+                                expand_more
+                                </span>                            
+                        </button>
+                    </h3>
+                    <ul id="ul_3">
+                        <li>L'éducation</li>
+                        <li>La santé</li>
+                        <li>L'emploi</li>
+                        <li>Les mobilités</li>
+                        <li>Le sport</li>
+                    </ul>
+                </section>
+                <section id="inf">
+                    <h3>
+                        Les infos utiles
+                        <button id="btn_4">
+                            <span class="material-symbols-outlined">
+                                expand_more
+                                </span>                            
+                        </button>
+                    </h3>
+                    <ul id="ul_4">
+                        <li>L'actualité</li>
+                        <li>Les études</li>
+                        <li>Connaitre vos droits</li>
+                        <li>Les aides techniques</li>
+                        <li>Les aides humaines</li>
+                        <li>Les adresses utiles</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="more">
+                <section id="asso">
+                    <h3>
+                        Soutenez nous
+                    </h3>
+                    <ul>
+                        <li>Faire un don</li>
+                        <li>Devenez membre</li>
+                        <li>Bénévolat</li>
+                        <li>Animer un groupe de parole</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>
+                        Contacts
+                    </h3>
+                    <ul>
+                        <li>Vos questions</li>
+                        <li>Abonnez vous à la news</li>
+                        <li>Témoignages</li>
+                    </ul>
+                </section>
+            </div>
         </div>
+        
     </main>
 
     <footer>Maquette Web mise en Forme par Delfino - ITIC - 2022 - &copy;</footer>

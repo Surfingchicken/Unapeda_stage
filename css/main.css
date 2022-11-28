@@ -85,36 +85,45 @@ header ul li h1{
     height: 110px;
     display: table-cell;
     vertical-align: middle;
+    color: #132d53;
     
 }
 header ul  li h2 {
+
     font-size: 25px;
     font-weight: 200;
     
 }
+header ul li h2 ul{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    padding-left: 0;
+}
 nav{
     font-weight:800;
     color: #fff;
-
-    
 }
 .ndnav{
     font-weight:600;
     margin-top: 0;
     position: relative;
     text-align: right;
-    background-color: #222;
+    background-color: #3C1518;
 }
 nav .contacts{
     width: 47%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color:#A44200;
+    height: 3rem;
 }
 nav .contacts img{
     display: inline-block;
     width: 30px;
     height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
 }
 nav .options{
     background-color:#3C1518 ;
@@ -132,7 +141,7 @@ nav *   li a {
     height:5rem;
 }
 .ndnav ul li a{
-    height: 3rem;
+    height: 2.5rem;
 }
 input[type=text] {
     height: 2.5rem;
@@ -141,9 +150,14 @@ input[type=text] {
     right: 20px;
     font-size: 17px;
 } 
+main .notnews{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 main .content{
-    padding: 5rem 5rem ;
-    display: block;
+    padding: 0 5rem ;
+    display: inline-block;
+
 }
 main .more{
     margin: 0 5rem 5rem;
@@ -219,10 +233,14 @@ section h3{
 }
 .material-symbols-outlined{
     font-size: 30px;
+}
+button .material-symbols-outlined{
+    font-size: 30px;
     padding: 0 10px;
 }
 section ul li:hover{
    filter: saturate(4); 
+   cursor: pointer;
 }
 .content section h3 button{
     background-color: transparent;
@@ -239,10 +257,35 @@ section ul li:hover{
 #ul_1,#ul_2,#ul_3,#ul_4{
     display: none;
 }
+.newscont{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    background-color: rgb(19, 45, 83);
+}
+.news {
+    display: none;
+    margin: 0;
+}
+.news.active{
+    display: block;
+}
+.left, .right {
+    background-color: #222;
+    color: #fff;
+}
+.left:hover, .right:hover{
+    cursor: pointer;
+}
+.left span{
+    transform: rotate(90deg);
+}
+.right span{
+    transform: rotate(-90deg);
+}
 .news{
     background-color: #132d53;
     border-radius: 0;
-    margin-top: 5rem;
 }
 .news figure{
     display: grid;
