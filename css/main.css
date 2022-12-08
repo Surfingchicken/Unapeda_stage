@@ -54,7 +54,7 @@ header{
     padding-top: 15px;
     padding-left: 5px;
     display: grid;
-    grid-template-columns: 160px repeat(3, 1fr);
+    grid-template-columns: 200px repeat(3, 1fr);
     padding-bottom: 3rem;
     
 }
@@ -64,9 +64,9 @@ header img{
     margin:auto;
 }
 header ul {
-    padding-left: 10rem;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left : 2rem ;
     
 }
 header video{
@@ -74,19 +74,24 @@ header video{
     padding: 1rem;
     width: 690px;
     height: 400px;
+    margin-left: 2rem;
 }
 header ul li {
     padding: 0;
     margin: 0;
+    text-align: center
 
 }
 header ul li h1{
     font-size:64px;
     height: 110px;
-    display: table-cell;
-    vertical-align: middle;
     color: #132d53;
+   
     
+}
+header ul li aside{
+    text-align: center;
+   margin: 0 30px;
 }
 header ul li h2 {
     font-size: 25px;
@@ -101,6 +106,7 @@ header ul li h2 ul{
 .important{
     display: grid;
     grid-template-rows: repeat(4,1fr);
+    margin: 2rem 5rem;
     
 }
 .important li{
@@ -113,12 +119,13 @@ header ul li h2 ul{
     padding: 1rem;  
     height: 50px;
 }
+
 .important .lang a{
     width: 50px;
     display: inline-block;
     text-align: center;
     border: solid 0.1rem;
-    margin-right: 20px;
+    margin: 0 10px;
     border-radius: 10px;
 }
 .important li input[type=text] {
@@ -186,11 +193,13 @@ nav .options>li {
     flex-shrink: 0;
     width: 300px;
 }
-nav .options .soutien h3{
-    background-color: #133953   ;
+nav .options .soutien a{
+    display: inline-block;
+    background-color: #BD661B   ;
     border-radius: 20px;
-    height: 90%;
-    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: normal;
 }
 nav .options li h3{
     height: 100%;
@@ -227,84 +236,7 @@ nav .options li h3 button span{
 .sous-menu li:hover {
     filter: saturate(4);
 }
-main .notnews{
-    display: flex;
-}
-main .more{
-    margin: 0 5rem 5rem;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 100px;
-    height: min-content;
-}
-section{
-    display: inline-block;
-    width: 100%;
-    color: #fff;
-    position: relative;
-    border-radius: 20px;
-    margin: 1rem 0  ;
-    text-align: center;
-}
-#res{
-    background-color: #b65c28;
-}
-#ass, #news2{
-    background-color:#2f690e ;
-}
-#besoins{
-    background-color:#2397ba ;
-}
-#inf{
-    background-color:#441353 ;
-}
-#asso, #news3{
-    background-color:#BD661B;
-}
-#con{
-    background-color:#52161b ;
-}
-section h3{
-    font-weight:600;
-    text-align: center;
-    position: relative;
-    padding: 1.5rem;
-    
-}
-.more section ul li:first-of-type{
-    position: relative;
-    margin-top: -20px;
-}
-.more section ul li:first-of-type::before,.more section li:first-of-type::after{
-    position: absolute;
-    width: 90%;
-    height: 10px;
-    content: "";
-}
-.more section ul li:first-of-type::before {
-    left: 5%;
-    top: 0;
-    border-top: 0.1rem  solid ;
-}
-.more section ul{
-    font-weight:600;
-    padding: 0;
-    background-color: inherit;
-    margin: 10px 0;
-    border-radius: 20px;
-    height: min-content;
-}
 
-.more section ul li{
-    padding: 1.1rem;
-    font-size: larger;
-    background-color: inherit;
-    border-radius: 20px;
-}
-.more section ul li:hover{
-    cursor: pointer;
-    filter: saturate(4);
-}
 main h2 {
     text-align: center;
     background-color: #132d53;
@@ -320,6 +252,7 @@ main h2 {
     height: 500px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5rem;
     display: grid;
     grid-template-columns: 80px 1fr 80px;
     background-color: rgb(19, 45, 83);
@@ -357,35 +290,131 @@ main h2 {
 .news{
     background-color: #132d53;
     border-radius: 0;
+    height: 100%;
+    position: relative;
 }
 .news figure{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
-    padding-bottom: 2rem;
+    margin-top: 1rem;
 }
 .news figure img{
     margin: auto;
-    height: 275px;
-    width: 412px;
-    
+    height: 350px;
+    width: 500px;
+    object-fit: contain;
 }
 .expandnews{
-    display: flex;
     position: absolute;
-    bottom: 20px;
-    right:100px;
-    height: 30px;
-    width: 50px;
-    background-color: #fff;
+    bottom: 10px;
+    right: 10px;
+    background-color: #222;
+    color: #fff;
     border-radius: 15px;
+    border: solid 1px #fff;
+    padding: 1rem;
+    font-size: larger;
+    letter-spacing: 2px;
+}
+.expandnews:hover{
+    cursor: pointer;
 }
 #infos{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 100px;
     text-align: left;
+    margin: 1rem 2rem;
 }
+main .notnews{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+}
+main .more{
+    margin-left: auto;
+    margin-right: auto;
+    height: min-content;
+    display: inline-block;
+    margin-top: 0;
+}
+section{
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    border-radius: 20px;
+    margin: 1rem 0  ;
+    text-align: center;
+}
+section h3{
+    font-weight:600;
+    text-align: center;
+    position: relative;
+    padding: 1.5rem 8rem;
+    
+}
+#news2{
+    background-color:#2f690e ;
+}
+#asso, #news3{
+    background-color:#BD661B;
+}
+#con{
+    background-color:#52161b ;
+}
+
+.more section ul li:first-of-type{
+    position: relative;
+    margin-top: -20px;
+}
+.more section ul li:first-of-type::before,.more section li:first-of-type::after{
+    position: absolute;
+    width: 90%;
+    height: 10px;
+    content: "";
+}
+.more section ul li:first-of-type::before {
+    left: 5%;
+    top: 0;
+    border-top: 0.1rem  solid ;
+}
+.more section ul{
+    font-weight:600;
+    padding: 0;
+    background-color: inherit;
+    margin: 10px 0;
+    border-radius: 20px;
+    display: none;
+    height: min-content;
+}
+
+.more section ul li{
+    padding: 1.1rem;
+    font-size: larger;
+    background-color: inherit;
+    border-radius: 20px;
+}
+.more section ul li:hover{
+    cursor: pointer;
+    filter: saturate(4);
+}
+.more section h3 button{
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 15px;
+    right: 5px;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
+.more section h3 button span{
+    font-size: 30px;
+    font-weight: bold;
+}   
 footer{
     text-align: center;
     background-color: #222;
