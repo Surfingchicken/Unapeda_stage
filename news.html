@@ -11,7 +11,6 @@
     <title>UNAPEDA</title>
 </head>
 <body>
-    <script src="./app.js"></script>
     <header>
             <img src="./asset/img/Logo_unapeda.png" alt="Logo_unapeda">
             <ul id="title_wrap">
@@ -80,7 +79,7 @@
     <nav>
         <ul class="options">
             <li>
-                <a href="./index.html"><h3>Accueil</h3></a>
+                <a href="./index.html"><h3>Accueil</h3></a> 
              </li>
             <li>
                 <h3>
@@ -111,7 +110,7 @@
                 <ul class="sous-menu">
                     <li>Adhésion</li>
                     <li>Inscription news</li>
-                    <li><a href="./news.html">Nos dernières actualités</a></li>
+                    <li><a href="./news.html"> Nos dernières actualités</a></li>
                     <li>Les réseaux sociaux</li>
                 </ul>
             </li>
@@ -155,15 +154,11 @@
             </li>
         </ul>
     </nav>
-    <main>
-        <h2>
+    <main class="newspage">
+        <h2 class="newspagetitle">
             Nos dernières News / Activités :
         </h2>
-        <div class="newscont">
-            <button class="left"><span translate="no" class="material-symbols-outlined">
-                expand_more
-                </span></button>
-           
+        <div class="newspagecont">
             <section class="news active">
                 <h3>
                     Expos
@@ -203,7 +198,7 @@
                 </figure> 
                 <a class="expandnews">détail/PDF</a>
             </section>
-            <section class="news" id="news2">
+            <section class="news active" id="news2">
                 <h3>
                     Village de noêl solidaire
                 </h3>
@@ -236,7 +231,7 @@
                 </figure> 
                 <a class="expandnews">détail/PDF</a>
             </section>
-            <section class="news" id="news3">
+            <section class="news active" id="news3">
                 <h3>
                     Accessibilité téléphonique
                 </h3>
@@ -251,59 +246,9 @@
                         </div>
                     </figcaption>
                 </figure>
-                <a class="expandnews" href="./asset/pdf/Accessibilite_telephonique.pdf">détail/PDF</a> 
-            </section>
-            
-            <button class="right">
-                <span translate="no" class="material-symbols-outlined">
-                expand_more
-                </span>
-            </button>
-        </div>
-        <div class="notnews">
-            <div class="annonce">
-                <p>
-                    28 janvier Inscrivez vous au sommet "orientation et handicap" : 
-                    Découvrez les intervenants et la programmation du sommet : <a href="https://www.sommet-orientation-handicap.fr/programme?utm_source=sendinblue&utm_campaign=Sommet__orientation_et_handicap__-_derniers_jours_pour_profiter_tu_tarif_prfrentiel_zoom_programme&utm_medium=email">ici</a>.
-                </p>
-            </div>
-            <div class="more">
-                <section id="asso">
-                    <h3>
-                        Soutenez nous
-                        <button id="btn_1">
-                            <span translate="no" class="material-symbols-outlined">
-                                expand_more
-                                </span>                            
-                        </button>
-                    </h3>
-                    <ul id="ul_1">
-                        <li>Faire un don</li>
-                        <li>Devenez membre</li>
-                        <li>Bénévolat</li>
-                        <li>Animer un groupe de parole</li>
-                    </ul>
-                  
-                </section>
-        
-                <section id="con">
-                    <h3>
-                        Contacts
-                        <button id="btn_2">
-                            <span translate="no" class="material-symbols-outlined">
-                                expand_more
-                                </span>                            
-                        </button>
-                    </h3>
-                    <ul id="ul_2">
-                        <li>Vos questions</li>
-                        <li>Abonnez vous à la news</li>
-                        <li>Témoignages</li>
-                    </ul>
-                </section>
-            </div>
-        </div>
-        
+                <a class="expandnews" href="./asset/pdf/Accessibilite_telephonique.pdf">détail/PDF</a>
+            </section>    
+        </div>    
     </main>
 
     <footer>Maquette Web mise en Forme par Delfino - ITIC - 2022 - &copy;</footer>

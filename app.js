@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", e => {
         }
 
         items[count].classList.add('active')
-        console.log(count);
+        // console.log(count);
         
     }
     suivant.addEventListener('click', slideSuivante)
