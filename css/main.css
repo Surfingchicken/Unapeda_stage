@@ -478,11 +478,15 @@ footer{
 }
 /* news page*/
 .newspage h2{
-    background-color: transparent;
+    background-color: #fff;
     color: #222;
     border: none;
     text-align: left;
+    position: sticky;
+    top: 87px;
     z-index: 3;
+    width: 100%;
+    padding-left: 15vw;
 }
 .newspagecont{
     display: grid;
