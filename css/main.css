@@ -196,10 +196,10 @@ header ul li h2 ul{
     position: relative;
     top: 10px;
     background-color: transparent;
-    filter: brightness(0.5) sepia(3) saturate(100000000%) hue-rotate(200deg);
+    /*filter: brightness(0.5) sepia(3) saturate(100000000%) hue-rotate(200deg);*/
 }
 .important .ressoc a .sic{
-    filter: invert(1) brightness(0.5) sepia(1) saturate(100000000%) hue-rotate(200deg);
+    /*filter: invert(1) brightness(0.5) sepia(1) saturate(100000000%) hue-rotate(200deg);*/
     position: relative;
     top: 5px;
 }
@@ -214,6 +214,8 @@ nav{
     height: 50px;
     background-color:#3c152a ;
     z-index: 2;
+    position: sticky;
+    top: 37px;
 }
 nav .options{
     display: flex;
@@ -480,6 +482,7 @@ footer{
     color: #222;
     border: none;
     text-align: left;
+    z-index: 3;
 }
 .newspagecont{
     display: grid;
